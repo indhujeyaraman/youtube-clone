@@ -1,0 +1,45 @@
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  z-index: 300;
+  overflow-x: auto;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  left: 94px;
+
+}
+@media (max-width: 799px) {
+  .scroll-container {
+    left: 24px;
+  }
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+  white-space: nowrap;
+  margin-right: 10px; 
+ padding: 10px 15px; 
+  background-color: rgb(40, 39, 39);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.15s;
+}
+.scroll-item:hover {
+  background-color: #535252;
+}
+.scroll-item:first-child {
+  background-color: white;
+  color: black;
+}
